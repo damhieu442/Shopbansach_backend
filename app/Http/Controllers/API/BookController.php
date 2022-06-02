@@ -121,10 +121,10 @@ class BookController extends Controller
 			if($request->has('file_upload'))
 			{
 				$des = public_path('uploads/book/'.$sach->s_image);
-					if(File::exists($des))
-					{
-						File::delete($des);
-					}
+					// if(File::exists($des))
+					// {
+					// 	File::delete($des);
+					// }
 					$file = $request->file_upload;
 					$ext = $request->file_upload->extension();
 					$file_name = time().'-'.'user'.'.'.$ext;
