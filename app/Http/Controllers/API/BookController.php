@@ -49,7 +49,8 @@ class BookController extends Controller
 		$sach->author_id = $request->input('author_id');
 		$sach->category_id = $request->input('category_id');
 		$sach->s_amount = $request->input('s_amount');
-		$sach->s_newPrice =$request->input('s_price')-$request->input('s_price') * $request->input('s_discount') / 100;
+		$sach->s_newPrice =$request->input('s_newPrice');
+		// $sach->s_newPrice =$request->input('s_price')-$request->input('s_price') * $request->input('s_discount') / 100;
 		if($request->has('file_upload'))
 		{
 			$file = $request->file_upload;
