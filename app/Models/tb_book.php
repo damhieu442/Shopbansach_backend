@@ -24,6 +24,7 @@ class tb_book extends Model
 	's_name',
 	's_description',
 	's_price',
+	's_newPrice',
 	's_nsx',
 	's_image',
 	's_status',
